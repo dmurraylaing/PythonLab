@@ -1,4 +1,5 @@
 import os
+
 from sprite import Sprite
 
 # Support function definitions
@@ -16,15 +17,16 @@ def list_sprite_files(directory):
     #return [x for x in os.listdir(directory) if x.endswith(".sprite")]
 
 def pick_sprite_file(filelist):
-    """Function to show list to user and get them to pick one"""
+    """Get the user to pick a sprite file"""
+    print("Select a sprite to draw:")
 
-    print("Select a sprite to draw from:")
-    optionNumber = 0
+    optionnumber=0
     for file in filelist:
-        print(str(optionNumber) + ": " + file)
-        optionNumber = optionNumber+1
+        print(str(optionnumber) + ": " + file)
+        optionnumber = optionnumber + 1
 
     selected = input("Enter number:")
+
     return filelist[int(selected)]
 
 # Get the list of sprite files

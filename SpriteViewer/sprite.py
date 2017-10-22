@@ -8,6 +8,8 @@ class Sprite:
         self._color_map = dict()
         self._color_map['B']='black'
         self._color_map[' ']='white'
+        self._color_map['Y']='yellow'
+        self._color_map['R']='red'
         return super().__init__(**kwargs)
     
     def load_from_file(self, file):
@@ -55,7 +57,7 @@ class Sprite:
 
 
     def _draw_start(self):
-        pass
+        turtle.speed(10)
 
     def _draw_pixel(self, pixel):
         print("Drawing pixel " + pixel)
