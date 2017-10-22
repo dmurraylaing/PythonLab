@@ -17,7 +17,15 @@ def list_sprite_files(directory):
 
 def pick_sprite_file(filelist):
     """Function to show list to user and get them to pick one"""
-    return filelist[0]
+
+    print("Select a sprite to draw from:")
+    optionNumber = 0
+    for file in filelist:
+        print(str(optionNumber) + ": " + file)
+        optionNumber = optionNumber+1
+
+    selected = input("Enter number:")
+    return filelist[int(selected)]
 
 # Get the list of sprite files
 sprite_files = list_sprite_files("Sprites")

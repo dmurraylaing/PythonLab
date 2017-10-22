@@ -30,6 +30,7 @@
     <Folder Include="Sprites\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Sprites\Goodbye.sprite" />
     <Content Include="Sprites\HelloWorld.sprite" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
