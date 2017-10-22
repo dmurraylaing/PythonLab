@@ -1,6 +1,7 @@
 import os
 from sprite import Sprite
 
+# Support function definitions
 def list_sprite_files(directory):
     """Get the list of sprite files from the current directory"""
     files = os.listdir(directory)
