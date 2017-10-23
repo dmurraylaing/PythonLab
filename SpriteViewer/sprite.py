@@ -11,6 +11,8 @@ class Sprite:
         self._color_map['Y']='yellow'
         self._color_map['R']='red'
         self._color_map['O']='orange'
+        self._color_map['G']='green'
+        self._color_map['Q']='brown'
         return super().__init__(**kwargs)
     
     def load_from_file(self, file):
